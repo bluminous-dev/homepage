@@ -25,7 +25,6 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
-  background-color: #777;
 }
 .carousel-item > img {
   position: absolute;
@@ -41,6 +40,7 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
+  margin-top: 50px;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -88,4 +88,7 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+.img{
+    align-items: center;
 }
