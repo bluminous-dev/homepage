@@ -1,0 +1,73 @@
+    /*スムーズスクロール設定*/
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    /*ヘッダー設定*/
+    .navbar{
+        background-color: #000096; /*背景色*/
+    }
+    .navbar-brand{
+        color: #66ff66; /*文字色*/
+    }
+    
+    /*ハンバーガーボタン色設定*/
+    .navbar-toggler {
+        border-color: #66ff66; /*枠線色*/
+        background-color: #000096; /*枠内の色*/
+    }
+    .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(102,255,102,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); /*三本線(≡)の色(strokeをrgba値で指定する)*/
+}
+    
+    /*レイアウト設定*/
+
+    /*ヘッダーのHome,About,Activity,Contact*/
+    .nav-link{
+        color:#66ff66
+    }
+    
+    /*Entre...,Tech...,Media...*/
+    #intro{
+        margin-top: 100px;
+    }
+    .topic{
+        color:#000096;
+    }
+    /*画像（いらすとや部分）*/
+    .img{
+        width:200px;
+        height:200px;
+    }
+    .img2{
+        width:200px;
+        height:300px;
+    }
+    
+    /*About,Activity,Contact*/
+    .featurette-heading{
+        color:#000096;
+    }
+    
+    /*全体のレイアウト*/
+    .row{
+        margin-top:100px; 
+        text-align: center;
+    }
+    .col-lg-4{
+        align-content: center;
+        text-align: center;
+    }
+    #transfer{
+        margin-top: 100px;
+    }
+    
+    .col-md-7{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    /*箇条書き部分*/
+    .list{
+        text-align: left;
+    }
