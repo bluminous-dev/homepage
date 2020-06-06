@@ -14,7 +14,7 @@
     <!--レイアウト設定用CSS-->
     <link rel="stylesheet" href="stylesheet.css"/>
     <!--ファビコン（=ホームページのアイコン）-->
-    <link rel="shortcut icon" href="./img/Entre-Tech-Media.ico"/>
+    <link rel="shortcut icon" href="./img/Bluminous.ico"/>
     
     <!--タイトル-->
     <title>Welcome to Bluminous!</title>
@@ -37,12 +37,12 @@
     <script src="https://kit.fontawesome.com/a392ee6574.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-
+<body theme="dark" id="master">   
     <header>
   <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-warning"> -->
    <nav class="navbar navbar-expand-md fixed-top">
     <a class="navbar-brand" href="./index.html">Bluminous</a>
+       <button id="themechange">Change Theme (Light/Dark)</button>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button><!-- Responsive Menu "≡"-->
@@ -72,8 +72,39 @@
     </div>
   </nav>
 </header>
+ 
+  <!--テーマ切り換え関数-->
+   <script>
+       document.getElementById("themechange").addEventListener("click",function(){
 
+        var theme = document.body.getAttribute("theme");
+        //もしダークテーマならライトテーマとライト版ロゴに切り換え
+        if (theme === "dark") {
+            document.body.setAttribute("theme","light");
+            document.getElementById("themeImg").src = "./img/Bluminous-Icon-Sub.jpg";
+            
+        } 
+        //もしライトテーマならダークテーマとダーク版ロゴに切り換え
+        else {
+            document.body.setAttribute("theme","dark");
+            document.getElementById("themeImg").src = "./img/Bluminous-Icon-Main.jpg";
+        }
+    });
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.setAttribute("theme","dark");
+    }
+    else {
+    document.body.setAttribute("theme","light");
+    }
+       //document.getElementsById("topic").style.color="green";
+
+    </script> 
+    
 <main role="main">
+<div id="background">
+   <img id="themeImg" src="./img/Bluminous-Icon-Main.jpg"/> 
+</div>
+ 
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
