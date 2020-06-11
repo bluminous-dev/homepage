@@ -76,22 +76,33 @@
   <!--テーマ切り換え関数-->
    <script>
        document.getElementById("themechange").addEventListener("click",function(){
+       
+       //同一idの要素を一括変更する関数
+       function changeColor(id,color){
+           var n=5;
+           for(i=0;i<=n;i++){
+               document.getElementById(id+i).style.color=color;
+           }
+       }
 
         var theme = document.body.getAttribute("theme");
+           
         //もしダークテーマならライトテーマとライト版ロゴに切り換え
         if (theme === "dark") {
             document.body.setAttribute("theme","light");
             document.getElementById("themeImg").src = "./img/Bluminous-Icon-Sub.jpg";
-            
+            changeColor("topic","#000096");
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
             document.getElementById("themeImg").src = "./img/Bluminous-Icon-Main.jpg";
+            changeColor("topic","#66ff66");
         }
     });
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.setAttribute("theme","dark");
+        
     }
     else {
     document.body.setAttribute("theme","light");
@@ -103,6 +114,7 @@
 <main role="main">
 <div id="background">
    <img id="themeImg" src="./img/Bluminous-Icon-Main.jpg"/> 
+   <p class="subtitle">Go Ahead Shinin' Future.</p>
 </div>
  
   <!-- Marketing messaging and featurettes
@@ -115,21 +127,21 @@
     <div class="row" id="intro">
       <div class="col-lg-4">
         <img class="img" src="img/kigyou_business_man.png">
-        <h2 class="topic">Entre...?</h2>
+        <h2 class="topic" id="topic0">Entre...?</h2>
         <p>"Entre" is entrepreneur.</p>
         <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
       </div><!-- /.col-lg-4 -->
       
       <div class="col-lg-4">
         <img class="img" src="img/book_gijutsusyo_it_set.png">  
-        <h2 class="topic">Tech...?</h2>
+        <h2 class="topic" id="topic1">Tech...?</h2>
         <p>"Tech" is technology.</p>
         <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
       </div><!-- /.col-lg-4 -->
       
       <div class="col-lg-4">
        <img class="img" src="img/building_talent_jimusyo.png">
-        <h2 class="topic">Media...?</h2>
+        <h2 class="topic" id="topic2">Media...?</h2>
         <p>"Media" is mass communication.</p>
         <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
       </div><!-- /.col-lg-4 -->
@@ -142,13 +154,13 @@
     <hr class="featurette-divider">
     <div class="contents">
       <div id="about" class="col-md-7">
-        <h2 class="featurette-heading">About</h2>
+        <h2 class="featurette-heading" id="topic3">About</h2>
         <p class="lead">Bluminousは，技術(Tech)とメディア(Media)の融合による，新時代のユーザー体験の提供を目的として設立された起業(Entre)プロジェクト団体です．</p>
       </div>
 
     <hr class="featurette-divider">
       <div id="activity" class="col-md-7">
-        <h2 class="featurette-heading">Activity</h2>
+        <h2 class="featurette-heading" id="topic4">Activity</h2>
         <div class="row" id="quiz-transfer">
             <div class="col-lg-4">
                 <img class="img2" src="img/quiz_man_hatena.png">
@@ -165,7 +177,7 @@
 
     <hr class="featurette-divider">
       <div id="contact" class="col-md-7">
-        <h2 class="featurette-heading">Contact</h2>
+        <h2 class="featurette-heading" id="topic5">Contact</h2>
           
           <p>
           <i class="far fa-envelope" id="sns">
@@ -174,7 +186,7 @@
           
           <p>
           <i class="fab fa-twitter-square" id="sns">
-          <a class="lead" href="https://twitter.com/Bluminous_info" target="_blank"> Twitter</a></i>
+          <a class="lead" href="https://twitter.com/Bluminous_info" target="_blank">Twitter</a></i>
           </p>
            
           <p>
@@ -185,8 +197,7 @@
           <p><i class="fab fa-instagram" id="sns"><a class="lead" href="https://www.instagram.com/bluminous_info/?hl=ja" target="_blank"> Instagram</a></i>
           </p>
           
-          <p>
-              <i class="fab fa-facebook" id="sns"><a class="lead">  Facebook (Coming soon...)</a></i>
+          <p><i class="fab fa-facebook" id="sns"><a class="lead"> Facebook (Coming soon...)</a></i>
           </p>
 
     <!-- /END THE FEATURETTES -->
@@ -200,7 +211,7 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-right"><a href="#">Back to Top</a></p>
-    <p>&copy; 2020 Bluminous</p>
+    <p>&copy; 2020 Bluminous All rights reserved.</p>
   </footer>
 </main>
 
