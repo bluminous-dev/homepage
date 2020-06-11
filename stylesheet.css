@@ -41,7 +41,7 @@ html{
 }
 .img2{
     width:200px;
-    height:300px;
+    height:200px;
 }
 
 /*About,Activity,Contact*/
@@ -49,6 +49,10 @@ html{
     color: #66ff66;
 }
 
+/*水平線*/
+.featurette-divider{
+    border-color: white;
+}
 /*全体のレイアウト*/
 .row{
     text-align: center;
@@ -57,9 +61,7 @@ html{
     align-content: center;
     text-align: center;
 }
-#transfer{
-    margin-top: 100px;
-}
+
 
 .col-md-7{
     text-align: center;
@@ -135,6 +137,6 @@ body{
 }
 .subtitle{
     font-family: cursive;
-    font-size:25px;
+    font-size:40px;
     text-align: center;
 }
