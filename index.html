@@ -81,7 +81,8 @@
        function changeColor(id,color){
            var n=5;
            for(i=0;i<=n;i++){
-               document.getElementById(id+i).style.color=color;
+               document.getElementById(id+i).style.color=color;//見出し文字色
+               document.getElementById(id+i).style.borderColor=color;//水平線色
            }
        }
 
@@ -92,12 +93,14 @@
             document.body.setAttribute("theme","light");
             document.getElementById("themeImg").src = "./img/Bluminous-Icon-Sub.jpg";
             changeColor("topic","#000096");
+            changeColor("featurette-divider","black");
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
             document.getElementById("themeImg").src = "./img/Bluminous-Icon-Main.jpg";
             changeColor("topic","#66ff66");
+            changeColor("featurette-divider","white");
         }
     });
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -114,15 +117,14 @@
 <main role="main">
 <div id="background">
    <img id="themeImg" src="./img/Bluminous-Icon-Main.jpg"/> 
-   <p class="subtitle">Go Ahead Shinin' Future.</p>
+      <p class="subtitle">Go Ahead Shinin' Future.</p>
 </div>
- 
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
   <div id="top" class="container marketing">
-
+<hr class="featurette-divider" id="featurette-divider0">
     <!-- Three columns of text below the carousel -->
     <div class="row" id="intro">
       <div class="col-lg-4">
@@ -151,23 +153,25 @@
 
     <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="featurette-divider1">
     <div class="contents">
       <div id="about" class="col-md-7">
         <h2 class="featurette-heading" id="topic3">About</h2>
         <p class="lead">Bluminousは，技術(Tech)とメディア(Media)の融合による，新時代のユーザー体験の提供を目的として設立された起業(Entre)プロジェクト団体です．</p>
       </div>
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="featurette-divider2">
       <div id="activity" class="col-md-7">
         <h2 class="featurette-heading" id="topic4">Activity</h2>
         <div class="row" id="quiz-transfer">
             <div class="col-lg-4">
-                <img class="img2" src="img/quiz_man_hatena.png">
+                <img class="img2" src="img/quiz-3.jpg">
+                <br>
                 <p><a class="btn btn-secondary" href="./quiz.html" role="button">クイズ</a></p>
             </div>
             <div class="col-lg-4" id="transfer">
-               <img class="img" src="img/test_shiken_businesswoman.png">
+               <img class="img" src="img/univ-3.jpg">
+               <br>
                <p><a class="btn btn-secondary" href="./univ_transfer.html" role="button">大学編入試験対策</a></p>
             </div>
         </div>
@@ -175,7 +179,7 @@
 より良い社会の実現のために，今後様々な事業を展開予定です．</p>
     </div>
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="featurette-divider3">
       <div id="contact" class="col-md-7">
         <h2 class="featurette-heading" id="topic5">Contact</h2>
           
@@ -203,7 +207,7 @@
     <!-- /END THE FEATURETTES -->
     </div>
     
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="featurette-divider4">
    </div>
 </div><!-- /.container -->
 
