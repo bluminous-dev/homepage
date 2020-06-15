@@ -39,11 +39,12 @@ html{
     width:200px;
     height:200px;
 }
+
+/*Activityの画像（クイズ，編入試験）*/
 .img2{
     width:200px;
     height:200px;
 }
-
 /*About,Activity,Contact*/
 .featurette-heading{
     color: #66ff66;
