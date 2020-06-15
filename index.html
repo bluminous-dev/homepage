@@ -92,6 +92,8 @@
         if (theme === "dark") {
             document.body.setAttribute("theme","light");
             document.getElementById("themeImg").src = "./img/Bluminous-Icon-Sub.jpg";
+            document.getElementById("quiz").src = "./img/quiz-1.jpg";
+            document.getElementById("univ").src = "./img/univ-1.jpg";
             changeColor("topic","#000096");
             changeColor("featurette-divider","black");
         } 
@@ -99,19 +101,20 @@
         else {
             document.body.setAttribute("theme","dark");
             document.getElementById("themeImg").src = "./img/Bluminous-Icon-Main.jpg";
+            document.getElementById("quiz").src = "./img/quiz-1-dark.jpg";
+            document.getElementById("univ").src = "./img/univ-1-dark.jpg";
             changeColor("topic","#66ff66");
             changeColor("featurette-divider","white");
         }
     });
+    
+    //OSのテーマを取得する
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.setAttribute("theme","dark");
-        
+        document.body.setAttribute("theme","dark");        
     }
     else {
     document.body.setAttribute("theme","light");
     }
-       //document.getElementsById("topic").style.color="green";
-
     </script> 
     
 <main role="main">
@@ -165,14 +168,10 @@
         <h2 class="featurette-heading" id="topic4">Activity</h2>
         <div class="row" id="quiz-transfer">
             <div class="col-lg-4">
-                <img class="img2" src="img/quiz-3.jpg">
-                <br>
-                <p><a class="btn btn-secondary" href="./quiz.html" role="button">クイズ</a></p>
+                <p><a href="./quiz.html" role="button"><img class="img2" id="quiz" src="img/quiz-1-dark.jpg"></a></p>
             </div>
-            <div class="col-lg-4" id="transfer">
-               <img class="img" src="img/univ-3.jpg">
-               <br>
-               <p><a class="btn btn-secondary" href="./univ_transfer.html" role="button">大学編入試験対策</a></p>
+            <div class="col-lg-4">
+               <p><a href="./univ_transfer.html" role="button"><img class="img2" id="univ" src="img/univ-1-dark.jpg"></a></p>
             </div>
         </div>
         <p class="lead">現在は，クイズと大学編入試験対策を中心に活動中です．
