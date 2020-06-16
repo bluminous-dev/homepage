@@ -113,12 +113,14 @@ body{
     color: var(--d-color);
 }
 #themechange{
+    position: relative;
+    left: 13%;
     border: var(--b-1);
     background: var(--m-bg);
     color: var(--a-color);
     font-size: 18px;
     font-weight: bold;
-    padding: 6px 15px;
+    padding: 5px 15px;
     border-radius: 4px;
     transition: all 1s;
 }
