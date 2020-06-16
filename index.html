@@ -53,22 +53,15 @@
           <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./index.html#about">About</a>
+          <a class="nav-link" href="./index.html#contents">Contents</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="./index.html#activity">Activity</a>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#about">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./index.html#contact">Contact</a>
         </li>
-        <!--<li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>-->
       </ul>
-      <!--<form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>-->
     </div>
   </nav>
 </header>
@@ -77,10 +70,9 @@
    <script>
        document.getElementById("themechange").addEventListener("click",function(){
        
-       //同一idの要素を一括変更する関数
-       function changeColor(id,color){
-           var n=5;
-           for(i=0;i<=n;i++){
+       //同一idの要素を一括変更する関数（引数はid，色，通し番号（インデックス）の順に指定）
+       function changeColor(id,color,index){
+           for(i=0;i<=index;i++){
                document.getElementById(id+i).style.color=color;//見出し文字色
                document.getElementById(id+i).style.borderColor=color;//水平線色
            }
@@ -94,8 +86,8 @@
             document.getElementById("themeImg").src = "./img/Bluminous-Icon-Sub.jpg";
             document.getElementById("quiz").src = "./img/quiz-1.jpg";
             document.getElementById("univ").src = "./img/univ-1.jpg";
-            changeColor("topic","#000096");
-            changeColor("featurette-divider","black");
+            changeColor("topic","#000096",2);
+            changeColor("featurette-divider","black",2);
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
@@ -103,8 +95,8 @@
             document.getElementById("themeImg").src = "./img/Bluminous-Icon-Main.jpg";
             document.getElementById("quiz").src = "./img/quiz-1-dark.jpg";
             document.getElementById("univ").src = "./img/univ-1-dark.jpg";
-            changeColor("topic","#66ff66");
-            changeColor("featurette-divider","white");
+            changeColor("topic","#66ff66",2);
+            changeColor("featurette-divider","white",2);
         }
     });
     
@@ -122,93 +114,49 @@
    <img id="themeImg" src="./img/Bluminous-Icon-Main.jpg"/> 
       <p class="subtitle">Go Ahead Shinin' Future.</p>
 </div>
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
   <div id="top" class="container marketing">
-<hr class="featurette-divider" id="featurette-divider0">
-    <!-- Three columns of text below the carousel -->
-    <div class="row" id="intro">
-      <div class="col-lg-4">
-        <img class="img" src="img/kigyou_business_man.png">
-        <h2 class="topic" id="topic0">Entre...?</h2>
-        <p>"Entre" is entrepreneur.</p>
-        <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
-      </div><!-- /.col-lg-4 -->
-      
-      <div class="col-lg-4">
-        <img class="img" src="img/book_gijutsusyo_it_set.png">  
-        <h2 class="topic" id="topic1">Tech...?</h2>
-        <p>"Tech" is technology.</p>
-        <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
-      </div><!-- /.col-lg-4 -->
-      
-      <div class="col-lg-4">
-       <img class="img" src="img/building_talent_jimusyo.png">
-        <h2 class="topic" id="topic2">Media...?</h2>
-        <p>"Media" is mass communication.</p>
-        <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
-      </div><!-- /.col-lg-4 -->
-      
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider" id="featurette-divider1">
-    <div class="contents">
-      <div id="about" class="col-md-7">
-        <h2 class="featurette-heading" id="topic3">About</h2>
-        <p class="lead">Bluminousは，技術(Tech)とメディア(Media)の融合による，新時代のユーザー体験の提供を目的として設立された起業(Entre)プロジェクト団体です．</p>
-      </div>
-
-    <hr class="featurette-divider" id="featurette-divider2">
-      <div id="activity" class="col-md-7">
-        <h2 class="featurette-heading" id="topic4">Activity</h2>
+    <hr class="featurette-divider" id="featurette-divider0">
+      <div id="contents" class="col-md-7">
+        <h2 class="featurette-heading" id="topic0">Contents</h2>
         <div class="row" id="quiz-transfer">
             <div class="col-lg-4">
-                <p><a href="./quiz.html" role="button"><img class="img2" id="quiz" src="img/quiz-1-dark.jpg"></a></p>
+                <a href="./quiz.html" role="button"><img class="img2" id="quiz" src="img/quiz-1-dark.jpg"></a><p class="lead">漢字クイズ・謎解き・三択クイズなど，様々なクイズを出題（準備中）．</p>
             </div>
             <div class="col-lg-4">
-               <p><a href="./univ_transfer.html" role="button"><img class="img2" id="univ" src="img/univ-1-dark.jpg"></a></p>
+               <a href="./univ_transfer.html" role="button"><img class="img2" id="univ" src="img/univ-1-dark.jpg"></a><p class="lead">⼤学編⼊試験対策(準備中)<br>各⼤学編⼊試験の傾向・対策問題を掲載．</p>
             </div>
         </div>
-        <p class="lead">現在は，クイズと大学編入試験対策を中心に活動中です．
-より良い社会の実現のために，今後様々な事業を展開予定です．</p>
-    </div>
-
-    <hr class="featurette-divider" id="featurette-divider3">
+       </div>
+    <hr class="featurette-divider" id="featurette-divider1">
+      <div id="about" class="col-md-7">
+        <h2 class="featurette-heading" id="topic1">About</h2>
+        <p class="lead">⾼校の同級⽣6⼈で結成したIT，エンタメ，教育の複合企業プロジェクト．現在はクイズ・⼤学編⼊試験対策を中⼼に活動中．今後，より良い社会の実現のために様々な事業を展開予定．</p>
+      </div>
+    <hr class="featurette-divider" id="featurette-divider2">
       <div id="contact" class="col-md-7">
-        <h2 class="featurette-heading" id="topic5">Contact</h2>
-          
-          <p>
-          <i class="far fa-envelope" id="sns">
-          <a class="lead" href="mailto:bluminous.info@gmail.com">E-Mail</a></i>
-          </p>
-          
-          <p>
-          <i class="fab fa-twitter-square" id="sns">
-          <a class="lead" href="https://twitter.com/Bluminous_info" target="_blank">Twitter</a></i>
-          </p>
-           
-          <p>
-          <i class="fab fa-github" id="sns">
-          <a class="lead" href="https://github.com/bluminous-dev/" target="_blank"> GitHub</a></i>
-          </p>
-           
-          <p><i class="fab fa-instagram" id="sns"><a class="lead" href="https://www.instagram.com/bluminous_info/?hl=ja" target="_blank"> Instagram</a></i>
-          </p>
-          
-          <p><i class="fab fa-facebook" id="sns"><a class="lead"> Facebook (Coming soon...)</a></i>
-          </p>
-
-    <!-- /END THE FEATURETTES -->
+        <h2 class="featurette-heading" id="topic2">Contact</h2>
+            <p class="lead">Please contact to us.</p>
+        <div class="row" id="sns-item">
+            <div class="col-lg-4">
+                <a href="mailto:bluminous.info@gmail.com"><i class="far fa-envelope" ></i></a>
+            </div>
+            <div class="col-lg-4">
+                <a href="https://twitter.com/Bluminous_info" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <div class="col-lg-4">
+                <a href="https://github.com/bluminous-dev/" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="col-lg-4">
+                <a href="https://www.instagram.com/bluminous_info/?hl=ja" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="col-lg-4">
+                <a><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
     </div>
     
-    <hr class="featurette-divider" id="featurette-divider4">
-   </div>
-</div><!-- /.container -->
+    <hr class="featurette-divider" id="featurette-divider3">
+   </div><!-- /.container -->
 
 
   <!-- FOOTER -->
