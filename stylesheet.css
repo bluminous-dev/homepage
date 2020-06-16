@@ -132,12 +132,11 @@ body{
     margin-top: 40px;
     width: 100%;
 }
-
-#sns{
-    font-size: 30px;
-}
 .subtitle{
     font-family: cursive;
     font-size:40px;
     text-align: center;
+}
+#sns-item{
+    font-size: 50px;
 }
