@@ -113,8 +113,6 @@ body{
     color: var(--d-color);
 }
 #themechange{
-    position: relative;
-    left: 13%;
     border: var(--b-1);
     background: var(--m-bg);
     color: var(--a-color);
@@ -135,7 +133,8 @@ body{
     width: 100%;
 }
 .subtitle{
-    font-family: cursive;
+    font-family:cursive;
+    font-style: italic;
     font-size:40px;
     text-align: center;
 }
