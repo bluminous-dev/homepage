@@ -42,7 +42,6 @@
   <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-warning"> -->
    <nav class="navbar navbar-expand-md fixed-top">
     <a class="navbar-brand" href="./index.html">Bluminous</a>
-       <button id="themechange">Change Theme</button>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button><!-- Responsive Menu "≡"-->
@@ -60,6 +59,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./index.html#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <button id="themechange">Change Theme</button> 
         </li>
       </ul>
     </div>
@@ -87,7 +89,7 @@
             document.getElementById("quiz").src = "./img/quiz-1.jpg";
             document.getElementById("univ").src = "./img/univ-1.jpg";
             changeColor("topic","#000096",2);
-            changeColor("featurette-divider","black",2);
+            changeColor("featurette-divider","black",3);
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
@@ -96,7 +98,7 @@
             document.getElementById("quiz").src = "./img/quiz-1-dark.jpg";
             document.getElementById("univ").src = "./img/univ-1-dark.jpg";
             changeColor("topic","#66ff66",2);
-            changeColor("featurette-divider","white",2);
+            changeColor("featurette-divider","white",3);
         }
     });
     
