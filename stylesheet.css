@@ -27,13 +27,6 @@ html{
     color:#66ff66
 }
 
-/*Entre...,Tech...,Media...*/
-.intro{
-    margin-top: 10px;
-}
-.topic{
-    color: #66ff66;
-}
 /*画像（いらすとや部分）*/
 .img{
     width:200px;
@@ -47,14 +40,12 @@ html{
 }
 /*About,Activity,Contact*/
 .featurette-heading{
-    color: #66ff66;
 }
 
 /*水平線*/
 .featurette-divider{
-    border-color: white;
 }
-/*全体のレイアウト*/
+/*全体のレイアウト*/s
 .row{
     text-align: center;
 }
