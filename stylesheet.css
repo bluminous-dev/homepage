@@ -132,3 +132,8 @@ body{
 #sns-item{
     font-size: 50px;
 }
+
+/*quiz.html css*/
+#quiz-topic{
+    margin-top:100px; 
+}
