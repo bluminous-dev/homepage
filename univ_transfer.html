@@ -14,11 +14,11 @@
     <!--レイアウト設定用CSS-->
     <link rel="stylesheet" href="stylesheet.css"/>
     <!--ファビコン（=ホームページのアイコン）-->
-    <link rel="shortcut icon" href="./img/Entre-Tech-Media.ico"/>
+    <link rel="shortcut icon" href="./img/Bluminous.ico"/>
     
     <!--タイトル-->
-    <title>大学編入試験対策</title>
-    
+    <title>Welcome to Bluminous!</title>
+
     <!-- スムーズスクロール設定-->
     <script>
         $(function(){
@@ -32,10 +32,12 @@
             });
         });
     </script>
+    
+    <!--SNSアカウント用-->
+    <script src="https://kit.fontawesome.com/a392ee6574.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-   
+<body theme="dark" id="master">   
     <header>
   <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-warning"> -->
    <nav class="navbar navbar-expand-md fixed-top">
@@ -47,49 +49,85 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="./univ_transfer.html">大学編入試験対策</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./index.html#about">About</a>
+          <button id="themechange">Change Theme</button> 
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="./index.html#activity">Activity</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html#contact">Contact</a>
-        </li>
-        <!--<li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>-->
       </ul>
-      <!--<form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>-->
     </div>
   </nav>
 </header>
+ 
+  <!--テーマ切り換え関数-->
+   <script>
+       //画像を読み込む関数（ページ読み込み用）
+       function readImg(id,imgPath){
+            document.getElementById(id).src=imgPath;
 
+       }
+       
+       //同一idの要素を一括設定する関数（引数はid，色，通し番号（インデックス）の順に指定）
+       function setColor(id,color){
+               document.getElementById(id).style.color=color;//見出し文字色
+               document.getElementById(id).style.borderColor=color;//水平線色
+       }
+       
+       document.getElementById("themechange").addEventListener("click",function(){
+       
+          
+       //同一idの要素を一括変更する関数（引数はid，色，通し番号（インデックス）の順に指定）
+       function changeColor(id,color){
+               document.getElementById(id).style.color=color;//見出し文字色
+               document.getElementById(id).style.borderColor=color;//水平線色
+       }
+
+        var theme = document.body.getAttribute("theme");
+           
+        //もしダークテーマならライトテーマとライト版ロゴに切り換え
+        if (theme === "dark") {
+            document.body.setAttribute("theme","light");
+            changeColor("topic","#000096");
+            changeColor("featurette-divider","black");
+        } 
+        //もしライトテーマならダークテーマとダーク版ロゴに切り換え
+        else {
+            document.body.setAttribute("theme","dark");
+            changeColor("topic","#66ff66");
+            changeColor("featurette-divider","white");
+        }
+    });
+    
+    //OSのテーマを取得する
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.setAttribute("theme","dark");
+        window.onload=function(){
+            setColor("topic","#66ff66");
+            setColor("featurette-divider","white");
+       }
+    }
+    else {
+    document.body.setAttribute("theme","light");
+        window.onload=function(){
+            setColor("topic","#000096");
+            setColor("featurette-divider","black");
+       }
+    }
+    </script> 
+    
 <main role="main">
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-<div id="top" class="container marketing">
-    <div class="row">
-      <div id="about" class="col-md-7">
-        <h2 class="featurette-heading">Univ.Transfer</h2>
-        <p class="lead">Coming soon...</p>
-      </div>
-    </div>
-    <hr class="featurette-divider">
-</div><!-- /.container -->
+      <div id="univ-transfer" class="col-md-7">
+        <h2 id="topic">大学編入試験対策</h2>
+            <p class="lead">Coming soon...</p>
+    <hr id="featurette-divider">
+   </div><!-- /.container -->
 
 
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-right"><a href="#">Back to Top</a></p>
-    <p>&copy; 2020 Bluminous</p>
+    <p>&copy; 2020 Bluminous All rights reserved.</p>
   </footer>
 </main>
 
