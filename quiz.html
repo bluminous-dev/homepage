@@ -74,9 +74,9 @@
                document.getElementById(id).style.borderColor=color;//水平線色
        }
        
+       //水平線の色のみ変える関数
        function setDivideColor(id,color,index){
            for(i=0;i<=index;i++){
-               document.getElementById(id+i).style.color=color;//見出し文字色
                document.getElementById(id+i).style.borderColor=color;//水平線色
            }
        }
@@ -89,13 +89,19 @@
                document.getElementById(id).style.color=color;//見出し文字色
                document.getElementById(id).style.borderColor=color;//水平線色
        }
-           
+        
+       //水平線の色のみ変える関数           
        function changeDivideColor(id,color,index){
            for(i=0;i<=index;i++){
-               document.getElementById(id+i).style.color=color;//見出し文字色
                document.getElementById(id+i).style.borderColor=color;//水平線色
            }
        }
+           
+       //Twitterのテーマ変更関数       
+       /*function changeTwitterTheme(id,color){
+           var target = document.getElementsById(id);
+           target.data-theme = color;
+       }*/
            
 
         var theme = document.body.getAttribute("theme");
@@ -105,12 +111,15 @@
             document.body.setAttribute("theme","light");
             changeColor("topic","#000096");
             changeDivideColor("featurette-divider","black",1);
+            //changeTwitterTheme("twitter-timeline","light");
+            
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
             changeColor("topic","#66ff66");
             changeDivideColor("featurette-divider","white",1);
+            //changeTwitterTheme("twitter-timeline","dark");
         }
     });
     
@@ -161,19 +170,23 @@
             <p class="lead">Twitterでクイズを配信中！</p>
         <div class="row" id="sns-item">
             <div class="col-lg-4">
-                <a href="https://twitter.com/SORAKAHYA_82" target="_blank"><i class="fab fa-twitter-square"> SORA</i></a>
+               <p>SORA</p>
+                <a id="twitter-timeline" class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/SORAKAHYA_82?ref_src=twsrc%5Etfw">Tweets by SORAKAHYA_82</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             
             <div class="col-lg-4">
-                <a href="https://twitter.com/kankenquiz" target="_blank"><i class="fab fa-twitter-square"> かん研</i></a>
+               <p>かん研</p>               
+                <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/kankenquiz?ref_src=twsrc%5Etfw">Tweets by kankenquiz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             
             <div class="col-lg-4">
-                <a href="https://twitter.com/quiz_negi" target="_blank"><i class="fab fa-twitter-square"> ねぎ</i></a>
+               <p>ねぎ</p>
+                <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/quiz_negi?ref_src=twsrc%5Etfw">Tweets by quiz_negi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             
             <div class="col-lg-4">
-                <a href="https://twitter.com/staquiz" target="_blank"><i class="fab fa-twitter-square"> staQuiz</i></a>
+               <p>staQuiz</p>
+                <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/staquiz?ref_src=twsrc%5Etfw">Tweets by staquiz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
     <hr id="featurette-divider1">
