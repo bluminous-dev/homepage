@@ -74,6 +74,13 @@
                document.getElementById(id).style.borderColor=color;//水平線色
        }
        
+       function setDivideColor(id,color,index){
+           for(i=0;i<=index;i++){
+               document.getElementById(id+i).style.color=color;//見出し文字色
+               document.getElementById(id+i).style.borderColor=color;//水平線色
+           }
+       }
+       
        document.getElementById("themechange").addEventListener("click",function(){
        
           
@@ -82,6 +89,14 @@
                document.getElementById(id).style.color=color;//見出し文字色
                document.getElementById(id).style.borderColor=color;//水平線色
        }
+           
+       function changeDivideColor(id,color,index){
+           for(i=0;i<=index;i++){
+               document.getElementById(id+i).style.color=color;//見出し文字色
+               document.getElementById(id+i).style.borderColor=color;//水平線色
+           }
+       }
+           
 
         var theme = document.body.getAttribute("theme");
            
@@ -89,13 +104,13 @@
         if (theme === "dark") {
             document.body.setAttribute("theme","light");
             changeColor("topic","#000096");
-            changeColor("featurette-divider","black");
+            changeDivideColor("featurette-divider","black",1);
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
             changeColor("topic","#66ff66");
-            changeColor("featurette-divider","white");
+            changeDivideColor("featurette-divider","white",1);
         }
     });
     
@@ -104,21 +119,45 @@
         document.body.setAttribute("theme","dark");
         window.onload=function(){
             setColor("topic","#66ff66");
-            setColor("featurette-divider","white");
+            setDivideColor("featurette-divider","white",1);
        }
     }
     else {
     document.body.setAttribute("theme","light");
         window.onload=function(){
             setColor("topic","#000096");
-            setColor("featurette-divider","black");
+            setDivideColor("featurette-divider","black",1);
        }
+    }
+    //クイズ作成
+    function onClickLink(question,answer){
+        //入力ウィンドウ生成
+        var form=window.prompt("question");
+        
+        //入力データ無しのエラー
+        if(form==""){
+            alert("NULL.");
+        }
+        
+        //正解
+        else if(form=="answer"){
+            alert("Correct.");
+        }
+        
+        //不正解
+        else{
+            alert("Incorrect.");
+        }
     }
     </script> 
     
 <main role="main">
-      <div id="quiz-topic" class="col-md-7">
+　　<div id="quiz-topic" class="col-md-7">
         <h2 id="topic">Quiz</h2>
+        <ul>
+            <li><a href=javascript:onClickLink();>⼤阪桐蔭⾼校野球部出⾝クイズ</a></li>
+        </ul>
+           <hr id="featurette-divider0">
             <p class="lead">Twitterでクイズを配信中！</p>
         <div class="row" id="sns-item">
             <div class="col-lg-4">
@@ -137,7 +176,7 @@
                 <a href="https://twitter.com/staquiz" target="_blank"><i class="fab fa-twitter-square"> staQuiz</i></a>
             </div>
         </div>
-    <hr id="featurette-divider">
+    <hr id="featurette-divider1">
    </div><!-- /.container -->
 
 
