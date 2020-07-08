@@ -140,6 +140,10 @@ body{
 #quiz-topic ul{
     text-align: left
 }
+#back{
+    font-size: 20px;
+    text-align: right;
+}
 
 /*univ_transfer.html css*/
 #univ-transfer{
