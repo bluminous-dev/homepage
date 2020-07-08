@@ -143,14 +143,13 @@
         //入力ウィンドウ生成
         var form=window.prompt("question");
         
-        //入力データ無しのエラー
-        if(form==""){
-            alert("NULL.");
+        //正解
+        if(form=="answer"){
+            alert("Correct.");
         }
         
-        //正解
-        else if(form=="answer"){
-            alert("Correct.");
+        else if(form==""){
+            alert("NULL.");
         }
         
         //不正解
@@ -168,23 +167,34 @@
         </ul>
            <hr id="featurette-divider0">
             <p class="lead">Twitterでクイズを配信中！</p>
+      <div id="sns-item">
+          <a href="#sora">SORA</a>
+          <a href="#kanken">かん研</a>
+          <a href="#negi">ねぎ</a>
+          <a href="#staquiz">staQuiz</a>
+      </div>
+
         <div class="row" id="sns-item">
-            <div class="col-lg-4">
+            <div id="sora" class="col-lg-4">
                <p>SORA</p>
                 <a id="twitter-timeline" class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/SORAKAHYA_82?ref_src=twsrc%5Etfw">Tweets by SORAKAHYA_82</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a id="back" class="float-right" href="#">Back to Top</a>
             </div>
             
-            <div class="col-lg-4">
+            <div id="kanken" class="col-lg-4">
                <p>かん研</p>               
                 <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/kankenquiz?ref_src=twsrc%5Etfw">Tweets by kankenquiz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a id="back" class="float-right" href="#">Back to Top</a>
+
             </div>
             
-            <div class="col-lg-4">
+            <div id="negi" class="col-lg-4">
                <p>ねぎ</p>
                 <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/quiz_negi?ref_src=twsrc%5Etfw">Tweets by quiz_negi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a id="back" class="float-right" href="#">Back to Top</a>
             </div>
             
-            <div class="col-lg-4">
+            <div id="staquiz" class="col-lg-4">
                <p>staQuiz</p>
                 <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/staquiz?ref_src=twsrc%5Etfw">Tweets by staquiz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
