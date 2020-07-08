@@ -137,6 +137,9 @@ body{
 #quiz-topic{
     margin-top:100px; 
 }
+#quiz-topic ul{
+    text-align: left
+}
 
 /*univ_transfer.html css*/
 #univ-transfer{
