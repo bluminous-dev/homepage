@@ -1,0 +1,8 @@
+@keyframes s-1 {
+    0% {
+        box-shadow: 0 0.001px 0.001px rgba(0, 0, 0, 0.26);
+    }
+    100% {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    }
+}
