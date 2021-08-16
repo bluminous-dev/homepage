@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="">
+   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+   <meta name="generator" content="Jekyll v3.8.6">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!--レイアウト設定用CSS-->
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <!--ファビコン（=ホームページのアイコン）-->
+    <link rel="shortcut icon" href="./img/blum.ico"/>
+    
+    <!--タイトル-->
+    <title>Welcome to Bluminous!</title>
+
+    <!-- スムーズスクロール設定-->
+    <script>
+        $(function(){
+            $('a[href^="#"]:not(a.carousel-control-prev, a.carousel-control-next, a.nav-link, a[data-toggle="collapse"], a[data-toggle="tab"])').click(function(){
+            var speed = 500;
+            var href= $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+                $("html, body").animate({scrollTop:position}, speed, "swing");
+                return false;
+            });
+        });
+    </script>
+    
+    <!--SNSアカウント用-->
+    <script src="https://kit.fontawesome.com/a392ee6574.js" crossorigin="anonymous"></script>
+</head>
+
+<body theme="dark" id="master">   
+    <header>
+  <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-warning"> -->
+   <nav class="navbar navbar-expand-md fixed-top">
+    <a class="navbar-brand" href="./index.html">Bluminous</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button><!-- Responsive Menu "≡"-->
+    
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <li class="nav-item">
+          <a class="nav-link" href="./agriculture.html">IoT農業</a>
+        </li>
+        <li class="nav-item">
+          <button id="themechange">Change Theme</button> 
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+ 
+  <!--テーマ切り換え関数-->
+   <script>
+       //画像を読み込む関数（ページ読み込み用）
+       function readImg(id,imgPath){
+            document.getElementById(id).src=imgPath;
+
+       }
+       
+       //同一idの要素を一括設定する関数（引数はid，色，通し番号（インデックス）の順に指定）
+       function setColor(id,color){
+               document.getElementById(id).style.color=color;//見出し文字色
+               document.getElementById(id).style.borderColor=color;//水平線色
+       }
+       
+       document.getElementById("themechange").addEventListener("click",function(){
+       
+          
+       //同一idの要素を一括変更する関数（引数はid，色，通し番号（インデックス）の順に指定）
+       function changeColor(id,color){
+               document.getElementById(id).style.color=color;//見出し文字色
+               document.getElementById(id).style.borderColor=color;//水平線色
+       }
+
+        var theme = document.body.getAttribute("theme");
+           
+        //もしダークテーマならライトテーマとライト版ロゴに切り換え
+        if (theme === "dark") {
+            document.body.setAttribute("theme","light");
+            changeColor("topic","#000096");
+            changeColor("featurette-divider","black");
+        } 
+        //もしライトテーマならダークテーマとダーク版ロゴに切り換え
+        else {
+            document.body.setAttribute("theme","dark");
+            changeColor("topic","#66ff66");
+            changeColor("featurette-divider","white");
+        }
+    });
+    
+    //OSのテーマを取得する
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.setAttribute("theme","dark");
+        window.onload=function(){
+            setColor("topic","#66ff66");
+            setColor("featurette-divider","white");
+       }
+    }
+    else {
+    document.body.setAttribute("theme","light");
+        window.onload=function(){
+            setColor("topic","#000096");
+            setColor("featurette-divider","black");
+       }
+    }
+    </script> 
+    
+<main role="main">
+      <div id="agriculture" class="col-md-7">
+        <h2 id="topic">IoT農業</h2>
+            <p class="lead">沖縄にて実験中！企業SNSで経過を順次更新予定！</p>
+    <hr id="featurette-divider">
+   </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to Top</a></p>
+    <p>&copy; 2020 Bluminous All rights reserved.</p>
+  </footer>
+</main>
+
+ 　<!-- Optional JavaScript -->
+ 　<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+</body>
+</html>
