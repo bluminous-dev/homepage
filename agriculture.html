@@ -37,11 +37,11 @@
     <script src="https://kit.fontawesome.com/a392ee6574.js" crossorigin="anonymous"></script>
 
     <!--Insta埋め込み-->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
     <script>
       $.ajax({
       type: 'GET',
-      url: 'https://graph.facebook.com/v12.0/17841437205378637?fields=name%2Cmedia.limit(10)%7Bcaption%2Clike_count%2Cmedia_url%2Cpermalink%2Cthumbnail_url%7D&access_token=EAAFDVvIxt8sBACStZBYeXAZC6tyQ72efn3fuSXRNStLMOEQB4R3cDYbuc3DJ2GzUcpL0N2L8VjKmekZAMP98Mjg8PeC15c5aDksH0IWiAYycN37ljv5f401vaMbDe3zggzZBVtxWprSbs6LVLZAy9RfanZC0m5XKOmHyqW1rcSaebDdnt0gFvZBbjKqZAvyEFFsZD',
+      url: 'https://graph.facebook.com/v12.0/17841437205378637?fields=name%2Cmedia.limit(10)%7Bcaption%2Clike_count%2Cmedia_url%2Cpermalink%2Cthumbnail_url%7D&access_token=EAAFDVvIxt8sBAByRKwEiJR9DQS6tu6wg7z7gf4HfQPausdN5DraxkJx2bIHiR9JBFpN2vmeqkdgBLWGqxny90BwIfTTXsiXXOZAJZAZCYO98YLpcUvlfxyMHFOsLrqzcRcTrhjYgW5MpCjQcIfN8ZAOWqHtEsyOhybIoPW7C4OYMhyMryLe76ZCwBAMwYZCm0ZD',
       dataType: 'json',
        success: function(json) {
       var ig = json.media.data;
