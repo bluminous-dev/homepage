@@ -35,34 +35,6 @@
     
     <!--SNSアカウント用-->
     <script src="https://kit.fontawesome.com/a392ee6574.js" crossorigin="anonymous"></script>
-
-    <!--Insta埋め込み-->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
-    <script>
-      $.ajax({
-      type: 'GET',
-      url: 'https://graph.facebook.com/v12.0/17841437205378637?fields=name%2Cmedia.limit(10)%7Bcaption%2Clike_count%2Cmedia_url%2Cpermalink%2Cthumbnail_url%7D&access_token=EAAFDVvIxt8sBAByRKwEiJR9DQS6tu6wg7z7gf4HfQPausdN5DraxkJx2bIHiR9JBFpN2vmeqkdgBLWGqxny90BwIfTTXsiXXOZAJZAZCYO98YLpcUvlfxyMHFOsLrqzcRcTrhjYgW5MpCjQcIfN8ZAOWqHtEsyOhybIoPW7C4OYMhyMryLe76ZCwBAMwYZCm0ZD',
-      dataType: 'json',
-       success: function(json) {
-      var ig = json.media.data;
-      var html = "";
-      for (var i = 0; i < ig.length; i++) {
-      var link = ig[i].permalink;
-      var image
-      caption = ig[i].caption;
-      if(!ig[i].thumbnail_url) {
-      // 動画の場合はこちら
-      image = ig[i].media_url;}
-      else {
-      // 写真の場合はこちら
-      image = ig[i].thumbnail_url;
-      }
-      html += '<div><a href="' + link + '" target="_blank"><img src="' + image + '"></a><p>'+caption+'</p></div>'
-      }
-      $(".insta").append(html);
-      }
-      });
-    </script>
 </head>
 
 <body theme="dark" id="master">   
@@ -148,7 +120,6 @@
       <div id="agriculture" class="col-md-7">
         <h2 id="topic">IoT農業</h2>
             <p class="lead">沖縄にて実証実験中！<br>順次Instagramにて更新予定</p>
-      <div class="insta"></div>
     <hr id="featurette-divider">
     </div><!-- /.container -->
 
