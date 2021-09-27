@@ -54,6 +54,10 @@ html{
     text-align: center;
 }
 
+.col-lg-12{
+    align-content: center;
+    text-align: center;
+}
 
 .col-md-7{
     text-align: center;
@@ -137,17 +141,22 @@ body{
     text-align: right;
 }
 
-/*univ_transfer.html css*/
-#univ-transfer{
+/*education.html css*/
+#topic{
     margin-top:100px; 
+}
+
+/*univ-transfer.html css*/
+#univ-transfer{
+    margin-top:100px;
+}
+
+/*kanji.html css*/
+#kanji{
+    margin-top:100px;
 }
 
 /*agriculture.html css*/
 #agriculture{
     margin-top:100px;
-}
-
-.insta img{
-    width:300px;
-    height:300px;
 }
