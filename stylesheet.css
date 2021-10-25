@@ -33,7 +33,7 @@ html{
     height:200px;
 }
 
-/*Activityの画像（クイズ，編入試験）*/
+/*Activityの画像（クイズ,農業,教育,編入）*/
 .img2{
     width:200px;
     height:200px;
@@ -54,7 +54,7 @@ html{
     text-align: center;
 }
 
-.col-lg-12{
+.col-lg-6{
     align-content: center;
     text-align: center;
 }
@@ -120,8 +120,7 @@ body{
     width: 100%;
 }
 .subtitle{
-    font-family:'times';
-    font-style: italic;
+    font-family:'Times';
     font-size:40px;
     text-align: center;
 }
@@ -142,7 +141,7 @@ body{
 }
 
 /*education.html css*/
-#topic{
+#educ-topic{
     margin-top:100px; 
 }
 
@@ -159,4 +158,14 @@ body{
 /*agriculture.html css*/
 #agriculture{
     margin-top:100px;
+}
+
+#agrinsta{
+    font-size: 60px;
+}
+
+/*logintop.php css*/
+#logintop{
+    margin-top:100px;
+    text-align:center;
 }
