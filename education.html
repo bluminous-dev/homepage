@@ -88,14 +88,16 @@
         //もしダークテーマならライトテーマとライト版ロゴに切り換え
         if (theme === "dark") {
             document.body.setAttribute("theme","light");
-            readImg("univ","./img/univ-l.svg")
+            readImg("beapp","./img/beapp-l.svg");
+            readImg("univ","./img/univ-l.svg");
             changeColor("educ-topic","#000096");
             changeColor("featurette-divider","black");
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
-            readImg("univ","./img/univ-d.svg")
+            readImg("beapp","./img/beapp-d.svg");
+            readImg("univ","./img/univ-d.svg");
             changeColor("educ-topic","#66ff66");
             changeColor("featurette-divider","white");
         }
@@ -105,7 +107,8 @@
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.setAttribute("theme","dark");
         window.onload=function(){
-            readImg("univ","./img/univ-d.svg")
+            readImg("beapp","./img/beapp-d.svg");
+            readImg("univ","./img/univ-d.svg");
             setColor("educ-topic","#66ff66");
             setColor("featurette-divider","white");
        }
@@ -113,7 +116,8 @@
     else {
     document.body.setAttribute("theme","light");
         window.onload=function(){
-            readImg("univ","./img/univ-l.svg")
+            readImg("beapp","./img/beapp-l.svg");
+            readImg("univ","./img/univ-l.svg");
             setColor("educ-topic","#000096");
             setColor("featurette-divider","black");
        }
@@ -124,6 +128,11 @@
   <div id="top" class="container">
     <div id="contents" class="col-md-7">
       <h2 id="educ-topic">教育事業</h2>
+      <div class="row" id="bewa">
+        <div class="col-md-7">
+          <a href="https://previewer.adalo.com/fa857f25-ac9f-4d7f-b195-1400e0041850"><img class="img2" id="beapp" alt="beapp"></a><p class="lead">Bluminous Education 準備中<br>教育事業全般の会員制ウェブアプリ</p>
+        </div>
+      </div>
       <div class="row" id="kanji-univ">
         <div class="col-md-7">
           <a href="univ_transfer.html"><img class="img2" id="univ" alt="univ"></a><p class="lead">大学編入対策<br>第１弾金大物化化学掲載準備中</p>
