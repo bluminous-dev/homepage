@@ -88,12 +88,14 @@
         //もしダークテーマならライトテーマとライト版ロゴに切り換え
         if (theme === "dark") {
             document.body.setAttribute("theme","light");
+            readImg("beapp","./img/beapp-l.svg");
             changeColor("topic","#000096");
             changeColor("featurette-divider","black");
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
+            readImg("beapp","./img/beapp-d.svg");
             changeColor("topic","#66ff66");
             changeColor("featurette-divider","white");
         }
@@ -103,6 +105,7 @@
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.setAttribute("theme","dark");
         window.onload=function(){
+            readImg("beapp","./img/beapp-d.svg");
             setColor("topic","#66ff66");
             setColor("featurette-divider","white");
        }
@@ -110,6 +113,7 @@
     else {
     document.body.setAttribute("theme","light");
         window.onload=function(){
+            readImg("beapp","./img/beapp-l.svg");
             setColor("topic","#000096");
             setColor("featurette-divider","black");
        }
@@ -120,6 +124,9 @@
       <div id="kanji" class="col-md-7">
         <h2 id="topic">漢字教育</h2>
             <p class="lead">第１弾小学生版掲載準備中！<br>順次追加予定</p>
+          <div>
+            <a href="https://previewer.adalo.com/fa857f25-ac9f-4d7f-b195-1400e0041850"><img class="img2" id="beapp" alt="beapp"></a><p class="lead">Bluminous Education 準備中<br>教育事業全般の会員制ウェブアプリ</p>
+          </div>
     <hr id="featurette-divider">
    </div><!-- /.container -->
 
