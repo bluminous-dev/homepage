@@ -38,6 +38,13 @@ html{
     width:200px;
     height:200px;
 }
+
+/*コンテンツ詳細内BE画像*/
+.img3{
+    width:100px;
+    height:100px;
+}
+
 /*About,Activity,Contact*/
 .featurette-heading{
 }
@@ -145,6 +152,10 @@ body{
     margin-top:100px; 
 }
 
+#educ-st{
+    margin-top:50px;
+}
+
 /*univ-transfer.html css*/
 #univ-transfer{
     margin-top:100px;
@@ -153,6 +164,14 @@ body{
 /*kanji.html css*/
 #kanji{
     margin-top:100px;
+}
+
+#kanji-st{
+    margin-top:30px;
+}
+
+#kanji-be{
+    margin-top:40px;
 }
 
 /*agriculture.html css*/
