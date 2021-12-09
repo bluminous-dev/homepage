@@ -161,6 +161,10 @@ body{
     margin-top:100px;
 }
 
+#univ-be{
+    margin-top:50px;
+}
+
 /*kanji.html css*/
 #kanji{
     margin-top:100px;
@@ -171,7 +175,7 @@ body{
 }
 
 #kanji-be{
-    margin-top:40px;
+    margin-top:50px;
 }
 
 /*agriculture.html css*/
