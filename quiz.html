@@ -117,7 +117,7 @@
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
-            changeColor("topic","#66ff66");
+            changeColor("topic","#33ff33");
             changeDivideColor("featurette-divider","white",1);
             //changeTwitterTheme("twitter-timeline","dark");
         }
@@ -127,7 +127,7 @@
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.setAttribute("theme","dark");
         window.onload=function(){
-            setColor("topic","#66ff66");
+            setColor("topic","#33ff33");
             setDivideColor("featurette-divider","white",1);
        }
     }
