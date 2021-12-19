@@ -8,12 +8,12 @@ html{
     background-color: #000096; /*背景色*/
 }
 .navbar-brand{
-    color: #66ff66; /*文字色*/
+    color: #55ff55; /*文字色*/
 }
 
 /*ハンバーガーボタン色設定*/
 .navbar-toggler {
-    border-color: #66ff66; /*枠線色*/
+    border-color: #55ff55; /*枠線色*/
     background-color: #000096; /*枠内の色*/
 }
 .navbar-toggler .navbar-toggler-icon {
@@ -24,7 +24,7 @@ html{
 
 /*ヘッダーのHome,About,Activity,Contact*/
 .nav-link{
-    color:#66ff66
+    color:#55ff55
 }
 
 /*画像（いらすとや部分）*/
@@ -91,7 +91,7 @@ body[theme="dark"] {
     --s-color: #9F9F9F;
     --s-bg: #242424;
     --b-1: 1px #242424 solid;
-    --a-color: #33ff33;
+    --a-color: #55ff55;
 }
 
 body[theme="light"] {
