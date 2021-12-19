@@ -50,7 +50,13 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
         <li class="nav-item">
-          <a class="nav-link" href="./education.html">教育事業</a>
+          <a class="nav-link" href="https://previewer.adalo.com/fa857f25-ac9f-4d7f-b195-1400e0041850">Bluminous Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./univ_transfer.html">大学編入</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./kanji.html">漢字</a>
         </li>
         <li class="nav-item">
           <button id="themechange">Change Theme</button> 
@@ -90,6 +96,7 @@
             document.body.setAttribute("theme","light");
             readImg("beapp","./img/beapp-l.svg");
             readImg("univ","./img/univ-l.svg");
+            readImg("kanj","./img/kanji-l.svg");
             changeColor("educ-topic","#000096");
             changeColor("featurette-divider","black");
         } 
@@ -98,7 +105,8 @@
             document.body.setAttribute("theme","dark");
             readImg("beapp","./img/beapp-d.svg");
             readImg("univ","./img/univ-d.svg");
-            changeColor("educ-topic","#66ff66");
+            readImg("kanj","./img/kanji-d.svg");
+            changeColor("educ-topic","#55ff55");
             changeColor("featurette-divider","white");
         }
     });
@@ -109,7 +117,8 @@
         window.onload=function(){
             readImg("beapp","./img/beapp-d.svg");
             readImg("univ","./img/univ-d.svg");
-            setColor("educ-topic","#66ff66");
+            readImg("kanj","./img/kanji-d.svg");
+            setColor("educ-topic","#55ff55");
             setColor("featurette-divider","white");
        }
     }
@@ -118,6 +127,7 @@
         window.onload=function(){
             readImg("beapp","./img/beapp-l.svg");
             readImg("univ","./img/univ-l.svg");
+            readImg("kanj","./img/kanji-l.svg");
             setColor("educ-topic","#000096");
             setColor("featurette-divider","black");
        }
@@ -126,16 +136,22 @@
     
 <main role="main">
   <div id="top" class="container">
-    <div id="contents" class="col-md-7">
+    <div class="col-md-7">
       <h2 id="educ-topic">教育事業</h2>
+      <h3 id="educ-st">Bluminous Education</h3>
       <div class="row" id="bewa">
         <div class="col-md-7">
-          <a href="https://previewer.adalo.com/fa857f25-ac9f-4d7f-b195-1400e0041850"><img class="img2" id="beapp" alt="beapp"></a><p class="lead">Bluminous Education 準備中<br>教育事業全般の会員制ウェブアプリ</p>
+          <a href="https://previewer.adalo.com/fa857f25-ac9f-4d7f-b195-1400e0041850"><img class="img2" id="beapp" alt="beapp"></a>
+          <p class="lead">教育事業全般の会員制ウェブアプリ</p>
         </div>
       </div>
+      <h3 id="educ-st">教育事業コンテンツ</h3>
       <div class="row" id="kanji-univ">
-        <div class="col-md-7">
-          <a href="univ_transfer.html"><img class="img2" id="univ" alt="univ"></a><p class="lead">大学編入対策<br>第１弾金大物化化学掲載準備中</p>
+        <div class="col-lg-6">
+          <p class="lead">大学編入<br>準備中</p>
+        </div>
+        <div class="col-lg-6">
+          <p class="lead">漢字<br>準備中</p>
         </div>
       </div>
     </div>
