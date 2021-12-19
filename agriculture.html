@@ -94,7 +94,7 @@
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
-            changeColor("topic","#33ff33");
+            changeColor("topic","#55ff55");
             changeColor("featurette-divider","white");
         }
     });
@@ -103,7 +103,7 @@
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.setAttribute("theme","dark");
         window.onload=function(){
-            setColor("topic","#33ff33");
+            setColor("topic","#55ff55");
             setColor("featurette-divider","white");
        }
     }
