@@ -61,11 +61,6 @@ html{
     text-align: center;
 }
 
-.col-lg-6{
-    align-content: center;
-    text-align: center;
-}
-
 .col-md-7{
     text-align: center;
     margin: 0 auto;
@@ -145,6 +140,11 @@ body{
 #back{
     font-size: 20px;
     text-align: right;
+}
+
+/*electronics.html css*/
+#elec-topic{
+    margin-top:100px;
 }
 
 /*education.html css*/
