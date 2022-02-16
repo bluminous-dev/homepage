@@ -61,6 +61,11 @@ html{
     text-align: center;
 }
 
+.col-lg-6{
+    align-content: center;
+    text-align: center;
+}
+
 .col-md-7{
     text-align: center;
     margin: 0 auto;
