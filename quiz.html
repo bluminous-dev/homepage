@@ -110,7 +110,7 @@
         if (theme === "dark") {
             document.body.setAttribute("theme","light");
             changeColor("topic","#000096");
-            changeDivideColor("featurette-divider","black",1);
+            changeColor("featurette-divider","black");
             //changeTwitterTheme("twitter-timeline","light");
             
         } 
@@ -118,7 +118,7 @@
         else {
             document.body.setAttribute("theme","dark");
             changeColor("topic","#55ff55");
-            changeDivideColor("featurette-divider","white",1);
+            changeColor("featurette-divider","white");
             //changeTwitterTheme("twitter-timeline","dark");
         }
     });
@@ -128,44 +128,21 @@
         document.body.setAttribute("theme","dark");
         window.onload=function(){
             setColor("topic","#55ff55");
-            setDivideColor("featurette-divider","white",1);
+            setColor("featurette-divider","white");
        }
     }
     else {
     document.body.setAttribute("theme","light");
         window.onload=function(){
             setColor("topic","#000096");
-            setDivideColor("featurette-divider","black",1);
+            setColor("featurette-divider","black");
        }
-    }
-    //クイズ作成
-    function onClickLink(question,answer){
-        //入力ウィンドウ生成
-        var form=window.prompt("question");
-        
-        //正解
-        if(form=="answer"){
-            alert("Correct.");
-        }
-        
-        else if(form==""){
-            alert("NULL.");
-        }
-        
-        //不正解
-        else{
-            alert("Incorrect.");
-        }
     }
     </script> 
     
 <main role="main">
 　　<div id="quiz-topic" class="col-md-7">
-        <h2 id="topic">クイズ</h2>
-        <ul>
-            <li><a href=javascript:onClickLink();>デイリークイズ準備中</a></li>
-        </ul>
-           <hr id="featurette-divider0">
+    <h2 id="topic">クイズ</h2>
             <p class="lead">Twitterでクイズを出題中！</p>
       <div class="row">
          <div class="col-lg-4" id="sns-item">
@@ -199,7 +176,7 @@
                 <a class="twitter-timeline" data-height="300" data-theme="dark" href="https://twitter.com/staquiz?ref_src=twsrc%5Etfw">Tweets by staquiz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
-    <hr id="featurette-divider1">
+    <hr id="featurette-divider">
    </div><!-- /.container -->
 
 
