@@ -152,13 +152,17 @@ body{
     margin-top:100px;
 }
 
+#elecsns{
+    font-size: 60px;
+}
+
 /*education.html css*/
 #educ-topic{
     margin-top:100px; 
 }
 
-#educ-st{
-    margin-top:50px;
+#blead{
+    font-family: 'Arial','Courier','メイリオ',sans-serif;
 }
 
 /*univ-transfer.html css*/
