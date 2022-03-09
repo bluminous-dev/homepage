@@ -76,6 +76,8 @@ html{
     text-align: left;
 }
 .lead{
+    font-size: 22px;
+    font-family: 'Arial','Courier','メイリオ',sans-serif;
     text-decoration-color: aliceblue;
 }
 
@@ -127,12 +129,36 @@ body{
     width: 100%;
 }
 .subtitle{
-    font-family:'Times';
     font-size:40px;
     text-align: center;
 }
+
 #sns-item{
     font-size: 40px;
+}
+
+#contents{
+    margin-top: 50px;
+}
+
+#about{
+    margin-top: 50px;
+}
+
+#contact{
+    margin-top: 50px;
+}
+
+#featurette-divider1{
+    margin-top: 50px;
+}
+
+#featurette-divider2{
+    margin-top: 50px;
+}
+
+#featurette-divider3{
+    margin-top: 50px;
 }
 
 /*quiz.html css*/
