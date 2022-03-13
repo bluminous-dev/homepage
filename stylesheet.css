@@ -76,8 +76,27 @@ html{
     text-align: left;
 }
 .lead{
+    font-size: 23px;
+    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    text-decoration-color: aliceblue;
+}
+
+.sublead{
+    font-size: 20px;
+    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    text-decoration-color: aliceblue;
+}
+
+.edlead{
+    font-size: 25px;
+    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    text-decoration-color: aliceblue;
+}
+
+.ealead{
     font-size: 22px;
     font-family: 'Arial','Courier','メイリオ',sans-serif;
+    margin-top: 10px;
     text-decoration-color: aliceblue;
 }
 
