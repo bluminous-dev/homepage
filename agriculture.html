@@ -96,12 +96,14 @@
             document.body.setAttribute("theme","light");
             changeColor("topic","#000096");
             changeColor("featurette-divider","black");
+            changeColor("ig-i","#e32f40");
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
             changeColor("topic","#55ff55");
             changeColor("featurette-divider","white");
+            changeColor("ig-i","#fb5757");
         }
     });
     
@@ -111,6 +113,7 @@
         window.onload=function(){
             setColor("topic","#55ff55");
             setColor("featurette-divider","white");
+            setColor("ig-i","#fb5757");
        }
     }
     else {
@@ -118,6 +121,7 @@
         window.onload=function(){
             setColor("topic","#000096");
             setColor("featurette-divider","black");
+            setColor("ig-i","#e32f40");
        }
     }
     </script> 
@@ -127,7 +131,7 @@
         <h2 id="topic">環境保護活動</h2>
            <p class="ealead">沖縄にて農業活動中<br>Instagramにて進捗を報告予定！</p>
         <div id="agrinsta" class="col-md-7">
-           <a href="https://www.instagram.com/bluminous_info/?hl=ja" target="_blank"><i class="fab fa-instagram"></i></a>
+           <a href="https://www.instagram.com/bluminous_info/?hl=ja" target="_blank"><i class="fab fa-instagram" id="ig-i"></i></a>
         </div>
     <hr id="featurette-divider">
     </div><!-- /.container -->
