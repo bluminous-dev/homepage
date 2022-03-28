@@ -33,6 +33,17 @@ html{
     height:200px;
 }
 
+/*Bluminousロゴ画像*/
+/* パソコン */
+.pc { display: block !important; }
+.sp { display: none !important; }
+ 
+/* スマートフォン */
+@media only screen and (max-width: 750px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+}
+
 /*Activityの画像（クイズ,農業,教育,編入）*/
 .img2{
     width:200px;
