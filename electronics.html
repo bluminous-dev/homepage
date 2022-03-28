@@ -96,12 +96,16 @@
             document.body.setAttribute("theme","light");
             changeColor("elec-topic","#000096");
             changeColor("featurette-divider","black");
+            changeColor("ma-i","#ff5a33");
+            changeColor("tw-i","#1da1f2");
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
             changeColor("elec-topic","#55ff55");
             changeColor("featurette-divider","white");
+            changeColor("ma-i","#ff9900");
+            changeColor("tw-i","#00ccff");
         }
     });
     
@@ -111,6 +115,8 @@
         window.onload=function(){
             setColor("elec-topic","#55ff55");
             setColor("featurette-divider","white");
+            setColor("ma-i","#ff9900");
+            setColor("tw-i","#00ccff");
        }
     }
     else {
@@ -118,6 +124,8 @@
         window.onload=function(){
             setColor("elec-topic","#000096");
             setColor("featurette-divider","black");
+            setColor("ma-i","#ff5a33");
+            setColor("tw-i","#1da1f2");
        }
     }
     </script> 
@@ -130,10 +138,10 @@
     <div id="elecmail" class="col-md-7">
       <div class="row" id="elecsns">
         <div class="col-lg-6">
-          <a href="mailto:bluminous.info@gmail.com"><i class="far fa-envelope" ></i></a>
+          <a href="mailto:bluminous.info@gmail.com"><i class="far fa-envelope" id="ma-i"></i></a>
         </div>
         <div class="col-lg-6">
-          <a href="https://twitter.com/Bluminous_info" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://twitter.com/Bluminous_info" target="_blank"><i class="fab fa-twitter-square" id="tw-i"></i></a>
         </div>
       </div>
     </div>
