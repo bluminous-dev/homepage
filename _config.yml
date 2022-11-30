@@ -1,0 +1,4 @@
+theme:
+url: "https://bluminous-dev.github.io"
+plugins:
+  - jekyll-sitemap
