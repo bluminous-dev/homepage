@@ -111,6 +111,12 @@ html{
     text-decoration-color: aliceblue;
 }
 
+.edsublead{
+    font-size: 18px;
+    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    text-decoration-color: aliceblue;
+}
+
 /*テーマ切り換え部分*/
 :root {
     --s-1: 0 2px 5px rgba(0, 0, 0, 0.26);
@@ -215,32 +221,6 @@ body{
 /*education.html css*/
 #educ-topic{
     margin-top:100px; 
-}
-
-#blead{
-    font-family: 'Arial','Courier','メイリオ',sans-serif;
-}
-
-/*univ-transfer.html css*/
-#univ-transfer{
-    margin-top:100px;
-}
-
-#univ-be{
-    margin-top:50px;
-}
-
-/*kanji.html css*/
-#kanji{
-    margin-top:100px;
-}
-
-#kanji-st{
-    margin-top:30px;
-}
-
-#kanji-be{
-    margin-top:50px;
 }
 
 /*agriculture.html css*/
