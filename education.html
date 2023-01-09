@@ -100,7 +100,7 @@
         //もしダークテーマならライトテーマとライト版ロゴに切り換え
         if (theme === "dark") {
             document.body.setAttribute("theme","light");
-            readImg("blutube","./img/blutube-l.svg");
+            readImg("blutube","./img/btube-l.svg");
             readImg("beapp","./img/beapp-l.svg");
             readImg("quiz","./img/quiz-l.svg");
             changeColor("educ-topic","#000096");
@@ -111,7 +111,7 @@
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
-            readImg("blutube","./img/blutube-d.svg");
+            readImg("blutube","./img/btube-d.svg");
             readImg("beapp","./img/beapp-d.svg");
             readImg("quiz","./img/quiz-d.svg");
             changeColor("educ-topic","#55ff55");
@@ -125,7 +125,7 @@
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.setAttribute("theme","dark");
         window.onload=function(){
-            readImg("blutube","./img/blutube-d.svg");
+            readImg("blutube","./img/btube-d.svg");
             readImg("beapp","./img/beapp-d.svg");
             readImg("quiz","./img/quiz-d.svg");
             setColor("educ-topic","#55ff55");
@@ -136,7 +136,7 @@
     else {
     document.body.setAttribute("theme","light");
         window.onload=function(){
-            readImg("blutube","./img/blutube-l.svg");
+            readImg("blutube","./img/btube-l.svg");
             readImg("beapp","./img/beapp-l.svg");
             readImg("quiz","./img/quiz-l.svg");
             setColor("educ-topic","#000096");
