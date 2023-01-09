@@ -125,7 +125,7 @@ html{
 
 body[theme="dark"] {
     --m-bg: #000032;
-    --d-color: #fff;
+    --d-color: #FFF;
     --s-color: #9F9F9F;
     --s-bg: #242424;
     --b-1: 1px #242424 solid;
@@ -133,7 +133,7 @@ body[theme="dark"] {
 }
 
 body[theme="light"] {
-    --m-bg: #FFF;
+    --m-bg: #DDFFFF;
     --d-color: #202124;
     --s-color: #5F6368;
     --b-1: 1px solid #dadce0;
