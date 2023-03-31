@@ -98,16 +98,14 @@
         if (theme === "dark") {
             document.body.setAttribute("theme","light");
             changeColor("topic","#000096");
-            changeColor("featurette-divider","black");
-            changeColor("ig-i","#e32f40");
+            changeColor("featurette-divider1","#000096");
             changeColor("btt","#000096");
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
             changeColor("topic","#55ff55");
-            changeColor("featurette-divider","white");
-            changeColor("ig-i","#fb5757");
+            changeColor("featurette-divider1","#55ff55");
             changeColor("btt","#55ff55");
         }
     });
@@ -117,8 +115,7 @@
         document.body.setAttribute("theme","dark");
         window.onload=function(){
             setColor("topic","#55ff55");
-            setColor("featurette-divider","white");
-            setColor("ig-i","#fb5757");
+            setColor("featurette-divider1","#55ff55");
             setColor("btt","#55ff55");
        }
     }
@@ -126,8 +123,7 @@
     document.body.setAttribute("theme","light");
         window.onload=function(){
             setColor("topic","#000096");
-            setColor("featurette-divider","black");
-            setColor("ig-i","#e32f40");
+            setColor("featurette-divider1","#000096");
             setColor("btt","#000096");
        }
     }
@@ -136,13 +132,8 @@
 <main role="main">
       <div id="agriculture" class="col-md-7">
         <h2 id="topic">農水産業</h2>
-           <p class="ealead">沖縄にて農業活動中<br>Instagramにて進捗を報告予定！</p>
-        <div id="agrinsta" class="row">
-          <div class="col-lg-12">
-           <a href="https://www.instagram.com/bluminous_info/?hl=ja" target="_blank"><i class="fab fa-instagram" id="ig-i"></i></a>
-          </div>
-        </div>
-    <hr id="featurette-divider">
+           <p class="edlead">沖縄にて農業活動中！</p>
+    <hr id="featurette-divider1">
     </div><!-- /.container -->
 
 
