@@ -111,6 +111,20 @@ html{
     text-decoration-color: aliceblue;
 }
 
+.edytslead{
+    font-size: 28px;
+    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    margin-top: 45px;
+    text-decoration-color: aliceblue;
+}
+
+.edcolead{
+    font-size: 28px;
+    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    margin-top: 30px;
+    text-decoration-color: aliceblue;
+}
+
 .edsublead{
     font-size: 18px;
     font-family: 'Arial','Courier','メイリオ',sans-serif;
@@ -157,6 +171,19 @@ body{
 
 
 #themechange:focus{
+    outline: none;
+}
+
+#toec{
+    border-color: var(--a-color);
+    background: var(--m-bg);
+    color: var(--a-color);
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+#toec:focus{
     outline: none;
 }
 
@@ -226,10 +253,6 @@ body{
 /*agriculture.html css*/
 #agriculture{
     margin-top:100px;
-}
-
-#agrinsta{
-    font-size: 60px;
 }
 
 /*sitemap.html css*/
