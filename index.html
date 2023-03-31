@@ -113,7 +113,7 @@
             readImg("educ","./img/educ-l.svg");
             readImg("agri","./img/agfi-l.svg");
             changeColor("topic","#000096",2);
-            changeColor("featurette-divider","black",3);
+            changeColor("featurette-divider","#000096",3);
             changeColor("ma-i","#ff5a33",0);
             changeColor("tw-i","#1da1f2",0);
             changeColor("ig-i","#e32f40",0);
@@ -131,7 +131,7 @@
             readImg("educ","./img/educ-d.svg");
             readImg("agri","./img/agfi-d.svg");
             changeColor("topic","#55ff55",2);
-            changeColor("featurette-divider","white",3);
+            changeColor("featurette-divider","#55FF55",3);
             changeColor("ma-i","#ff9900",0);
             changeColor("tw-i","#00ccff",0);
             changeColor("ig-i","#fb5757",0);
@@ -152,7 +152,7 @@
             readImg("educ","./img/educ-d.svg");
             readImg("agri","./img/agfi-d.svg");
             setColor("topic","#55ff55",2);
-            setColor("featurette-divider","white",3);
+            setColor("featurette-divider","#55FF55",3);
             setColor("ma-i","#ff9900",0);
             setColor("tw-i","#00ccff",0);
             setColor("ig-i","#fb5757",0);
@@ -171,7 +171,7 @@
             readImg("educ","./img/educ-l.svg");
             readImg("agri","./img/agfi-l.svg");
             setColor("topic","#000096",2);
-            setColor("featurette-divider","black",3);
+            setColor("featurette-divider","#000096",3);
             setColor("ma-i","#ff5a33",0);
             setColor("tw-i","#1da1f2",0);
             setColor("ig-i","#e32f40",0);
@@ -192,21 +192,34 @@
     <hr id="featurette-divider0">
       <div id="contents" class="col-md-7">
         <h1 id="topic0">Contents</h2>
+          <p class="sublead">各詳細は画像クリック</p>
         <div class="row" id="quiz-transfer">
-            <div class="col-lg-4">
-               <a href="./agriculture.html" role="button"><img class="img2" id="agri" alt="agri"></a>
-               <p class="edlead">農水産業</p>
-               <p class="sublead">沖縄にて活動中</p>
-            </div>
-            <div class="col-lg-4">
-              <a href="./electronics.html" role="button"><img class="img2" id="elec"alt="elec"></a>
-              <p class="edlead">電子工作</p>
-              <p class="sublead">依頼受付中</p>
-            </div>
-            <div class="col-lg-4">
+            <div class="col-lg-6">
               <a href="./education.html" role="button"><img class="img2" id="educ" alt="educ"></a>
-              <p class="edlead">教育</p>
-              <p class="sublead">漢字教育スタート</p>
+            </div>
+            <div class="col-lg-6">
+              <p class="edcolead">教育</p>
+              <p class="sublead">
+                YouTube漢字動画次回更新<br>
+                4/3(月) 中学読み横型1-50
+              </p>
+              <button type="button" id="toec" onclick="location.href='./education.html'">詳細</button>
+            </div>
+            <div class="col-lg-6">
+               <a href="./agriculture.html" role="button"><img class="img2" id="agri" alt="agri"></a>   
+            </div>
+            <div class="col-lg-6">
+              <p class="edcolead">農水産業</p>
+              <p class="sublead">沖縄にて活動中</p>
+              <button type="button" id="toec" onclick="location.href='./agriculture.html'">詳細</button>
+            </div>
+            <div class="col-lg-6">
+              <a href="./electronics.html" role="button"><img class="img2" id="elec"alt="elec"></a>
+            </div>
+            <div class="col-lg-6">
+              <p class="edcolead">電子工作</p>
+              <p class="sublead">依頼受付中</p>
+              <button type="button" id="toec" onclick="location.href='./electronics.html'">詳細</button>
             </div>
         </div>
        </div>
@@ -214,7 +227,7 @@
       <div id="about" class="col-md-7">
         <h1 id="topic1">About</h2>
         <p class="subtitle">Go Ahead Shinin'Future.</p>
-        <p class="lead">⾼校の同級⽣で結成した農水産業,教育,電子工作の複合企業プロジェクト</p>
+        <p class="lead">⾼校の同級⽣で結成した農水産業,教育,電子工作からなる<br>複合企業プロジェクト</p>
       </div>
     <hr id="featurette-divider2">
       <div id="contact" class="col-md-7">
