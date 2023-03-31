@@ -62,9 +62,6 @@
           <a class="nav-link" href="./sitemap.html">サイトマップ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://previewer.adalo.com/fa857f25-ac9f-4d7f-b195-1400e0041850">Bluminous Education</a>
-        </li>
-        <li class="nav-item">
           <button id="themechange">Change Theme</button> 
         </li>
       </ul>
@@ -101,23 +98,19 @@
         if (theme === "dark") {
             document.body.setAttribute("theme","light");
             readImg("blutube","./img/btube-l.svg");
-            readImg("beapp","./img/beapp-l.svg");
             readImg("quiz","./img/quiz-l.svg");
             changeColor("educ-topic","#000096");
-            changeColor("featurette-divider","black");
+            changeColor("featurette-divider","#000096");
             changeColor("btt","#000096");
-            changeColor("yt-bi","#ff0000");
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
             readImg("blutube","./img/btube-d.svg");
-            readImg("beapp","./img/beapp-d.svg");
             readImg("quiz","./img/quiz-d.svg");
             changeColor("educ-topic","#55ff55");
-            changeColor("featurette-divider","white");
+            changeColor("featurette-divider","#55FF55");
             changeColor("btt","#55ff55");
-            changeColor("yt-bi","#ff3300");
         }
     });
     
@@ -126,10 +119,9 @@
         document.body.setAttribute("theme","dark");
         window.onload=function(){
             readImg("blutube","./img/btube-d.svg");
-            readImg("beapp","./img/beapp-d.svg");
             readImg("quiz","./img/quiz-d.svg");
             setColor("educ-topic","#55ff55");
-            setColor("featurette-divider","white");
+            setColor("featurette-divider","#55FF55");
             setColor("btt","#55ff55");
        }
     }
@@ -137,12 +129,10 @@
     document.body.setAttribute("theme","light");
         window.onload=function(){
             readImg("blutube","./img/btube-l.svg");
-            readImg("beapp","./img/beapp-l.svg");
             readImg("quiz","./img/quiz-l.svg");
             setColor("educ-topic","#000096");
-            setColor("featurette-divider","black");
+            setColor("featurette-divider","#000096");
             setColor("btt","#000096");
-            setColor("yt-bi","#ff0000");
        }
     }
     </script> 
@@ -154,15 +144,19 @@
       <div class="row" id="bewa">
         <div class="col-lg-6">
           <a href="https://www.youtube.com/channel/UC8v3GT7YQWzH4DKn0GyN1_A"><img class="img2" id="blutube"></a>
-          <p class="edlead">公式Youtube</p>
-          <p class="edsublead">漢字中学編<br>随時更新中</p>
+          <p class="edlead">公式YouTube</p>
         </div>
         <div class="col-lg-6">
-          <a href="https://previewer.adalo.com/fa857f25-ac9f-4d7f-b195-1400e0041850"><img class="img2" id="beapp" alt="beapp"></a>
-          <p class="edlead">Bluminous Education</p>
-          <p class="edsublead">教育事業ウェブアプリ<br>四択中学四字熟語</p>
+          <p class="edytslead">更新予定</p>
+          <p class="edsublead">
+            4/3(月) 中学読み横型1-50<br>
+            4/4(火) 高校読み横型1-50<br>
+            4/6(木) 中学読み縦型1-50<br>
+            4/7(金) 高校読み縦型1-50<br>
+            4/8(土) 四字熟語第1回
+          </p>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-12">
           <a href="quiz.html"><img class="img2" id="quiz" alt="quiz"></a>
           <p class="edlead">クイズ</p>
         </div>
