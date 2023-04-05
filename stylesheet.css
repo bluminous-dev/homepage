@@ -52,8 +52,9 @@ html{
 
 /*コンテンツ詳細内BE画像*/
 .img3{
-    width:100px;
-    height:100px;
+    width:200px;
+    height:200px;
+    margin-top: 25px;
 }
 
 /*About,Activity,Contact*/
@@ -80,6 +81,11 @@ html{
 .col-md-7{
     text-align: center;
     margin: 0 auto;
+}
+
+.col-lg-12{
+    align-content: center;
+    text-align: center;
 }
 
 /*箇条書き部分*/
@@ -121,7 +127,7 @@ html{
 .edcolead{
     font-size: 28px;
     font-family: 'Arial','Courier','メイリオ',sans-serif;
-    margin-top: 30px;
+    margin-top: 1px;
     text-decoration-color: aliceblue;
 }
 
@@ -144,6 +150,7 @@ body[theme="dark"] {
     --s-bg: #242424;
     --b-1: 1px #242424 solid;
     --a-color: #55ff55;
+    --bt-color: #000075;
 }
 
 body[theme="light"] {
@@ -152,6 +159,7 @@ body[theme="light"] {
     --s-color: #5F6368;
     --b-1: 1px solid #dadce0;
     --a-color: #000096;
+    --bt-color: #00FFFF;
 }
 
 body{
@@ -176,7 +184,7 @@ body{
 
 #toec{
     border-color: var(--a-color);
-    background: var(--m-bg);
+    background: var(--bt-color);
     color: var(--a-color);
     font-size: 15px;
     padding: 5px 15px;
