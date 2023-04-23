@@ -5,7 +5,7 @@ html{
 
 /*ヘッダー設定*/
 .navbar{
-    background-color: #000096; /*背景色*/
+    background-color: #000064; /*背景色*/
 }
 .navbar-brand{
     color: #55ff55; /*文字色*/
@@ -14,7 +14,7 @@ html{
 /*ハンバーガーボタン色設定*/
 .navbar-toggler {
     border-color: #55ff55; /*枠線色*/
-    background-color: #000096; /*枠内の色*/
+    background-color: #000064; /*枠内の色*/
 }
 .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(102,255,102,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); /*三本線(≡)の色(strokeをrgba値で指定する)*/
@@ -22,9 +22,9 @@ html{
 
 /*レイアウト設定*/
 
-/*ヘッダーのHome,About,Activity,Contact*/
+/*ヘッダーのContents,About,Contact*/
 .nav-link{
-    color:#55ff55
+    color: #55ff55;
 }
 
 /*画像（いらすとや部分）*/
@@ -57,13 +57,6 @@ html{
     margin-top: 25px;
 }
 
-/*About,Activity,Contact*/
-.featurette-heading{
-}
-
-/*水平線*/
-.featurette-divider{
-}
 /*全体のレイアウト*/s
 .row{
     text-align: center;
@@ -159,7 +152,7 @@ body[theme="light"] {
     --s-color: #5F6368;
     --b-1: 1px solid #dadce0;
     --a-color: #000096;
-    --bt-color: #00FFFF;
+    --bt-color: #97FFFF;
 }
 
 body{
