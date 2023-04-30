@@ -8,23 +8,23 @@ html{
     background-color: #000064; /*背景色*/
 }
 .navbar-brand{
-    color: #55ff55; /*文字色*/
+    color: #FFC000; /*文字色*/
 }
 
 /*ハンバーガーボタン色設定*/
 .navbar-toggler {
-    border-color: #55ff55; /*枠線色*/
+    border-color: #FFC000; /*枠線色*/
     background-color: #000064; /*枠内の色*/
 }
 .navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(102,255,102,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); /*三本線(≡)の色(strokeをrgba値で指定する)*/
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,192,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); /*三本線(≡)の色(strokeをrgba値で指定する)*/
 }
 
 /*レイアウト設定*/
 
 /*ヘッダーのContents,About,Contact*/
 .nav-link{
-    color: #55ff55;
+    color: #66FF99;
 }
 
 /*画像（いらすとや部分）*/
@@ -57,7 +57,7 @@ html{
     margin-top: 25px;
 }
 
-/*全体のレイアウト*/s
+/*全体のレイアウト*/
 .row{
     text-align: center;
 }
