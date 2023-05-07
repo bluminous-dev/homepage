@@ -81,52 +81,62 @@ html{
     text-align: center;
 }
 
+.col-sm-6{
+    align-content: center;
+    text-align: center;
+}
+
+.col-xs-6{
+    align-content: center;
+    text-align: center;
+}
+
 /*箇条書き部分*/
 .list{
     text-align: left;
 }
 .lead{
     font-size: 23px;
-    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    font-family: 'Noto Sans JP',sans-serif;
     text-decoration-color: aliceblue;
 }
 
 .sublead{
     font-size: 20px;
-    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    font-family: 'Noto Sans JP',sans-serif;
     text-decoration-color: aliceblue;
 }
 
 .edlead{
     font-size: 25px;
-    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    font-family: 'Noto Sans JP',sans-serif;
     text-decoration-color: aliceblue;
 }
 
 .ealead{
     font-size: 22px;
-    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    font-family: 'Noto Sans JP',sans-serif;
     margin-top: 10px;
     text-decoration-color: aliceblue;
 }
 
 .edytslead{
     font-size: 28px;
-    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    font-family: 'Noto Sans JP',sans-serif;
     margin-top: 45px;
     text-decoration-color: aliceblue;
 }
 
 .edcolead{
     font-size: 28px;
-    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    font-family: 'Noto Sans JP',sans-serif;
     margin-top: 1px;
     text-decoration-color: aliceblue;
 }
 
 .edsublead{
     font-size: 18px;
-    font-family: 'Arial','Courier','メイリオ',sans-serif;
+    font-family: 'Noto Sans JP',sans-serif;
     text-decoration-color: aliceblue;
 }
 
@@ -172,19 +182,6 @@ body{
 
 
 #themechange:focus{
-    outline: none;
-}
-
-#toec{
-    border-color: var(--a-color);
-    background: var(--bt-color);
-    color: var(--a-color);
-    font-size: 15px;
-    padding: 5px 15px;
-    border-radius: 4px;
-}
-
-#toec:focus{
     outline: none;
 }
 
