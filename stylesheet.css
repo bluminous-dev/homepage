@@ -140,6 +140,12 @@ html{
     text-decoration-color: aliceblue;
 }
 
+.fa-twitter-square::before {
+    content: '𝕏' !important;
+    font-family: sans-serif !important;
+    font-size: larger;
+}
+
 /*テーマ切り換え部分*/
 :root {
     --s-1: 0 2px 5px rgba(0, 0, 0, 0.26);
@@ -157,7 +163,7 @@ body[theme="dark"] {
 }
 
 body[theme="light"] {
-    --m-bg: #DDFFFF;
+    --m-bg: #E7FFFF;
     --d-color: #202124;
     --s-color: #5F6368;
     --b-1: 1px solid #dadce0;
