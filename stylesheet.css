@@ -24,7 +24,7 @@ html{
 
 /*ヘッダーのContents,About,Contact*/
 .nav-link{
-    color: #66FF99;
+    color: #55FF55;
 }
 
 /*画像（いらすとや部分）*/
@@ -61,6 +61,11 @@ html{
 .row{
     text-align: center;
 }
+.col-lg-3{
+    align-content: center;
+    text-align: center;
+}
+
 .col-lg-4{
     align-content: center;
     text-align: center;
@@ -111,6 +116,7 @@ html{
     font-size: 25px;
     font-family: 'Noto Sans JP',sans-serif;
     text-decoration-color: aliceblue;
+    color: var(--a2-color);
 }
 
 .ealead{
@@ -125,6 +131,7 @@ html{
     font-family: 'Noto Sans JP',sans-serif;
     margin-top: 45px;
     text-decoration-color: aliceblue;
+    color: var(--a2-color);
 }
 
 .edcolead{
@@ -132,18 +139,13 @@ html{
     font-family: 'Noto Sans JP',sans-serif;
     margin-top: 1px;
     text-decoration-color: aliceblue;
+    color: var(--a2-color);
 }
 
 .edsublead{
     font-size: 18px;
     font-family: 'Noto Sans JP',sans-serif;
     text-decoration-color: aliceblue;
-}
-
-.fa-twitter-square::before {
-    content: '𝕏' !important;
-    font-family: sans-serif !important;
-    font-size: larger;
 }
 
 /*テーマ切り換え部分*/
@@ -160,6 +162,7 @@ body[theme="dark"] {
     --b-1: 1px #242424 solid;
     --a-color: #55ff55;
     --bt-color: #000075;
+    --a2-color: #66FF99;
 }
 
 body[theme="light"] {
@@ -169,6 +172,7 @@ body[theme="light"] {
     --b-1: 1px solid #dadce0;
     --a-color: #000096;
     --bt-color: #97FFFF;
+    --a2-color: #000075;
 }
 
 body{
