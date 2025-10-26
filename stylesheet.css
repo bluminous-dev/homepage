@@ -142,18 +142,48 @@ html{
     color: var(--a2-color);
 }
 
-.edcolead{
-    font-size: 28px;
-    font-family: 'Noto Sans JP',sans-serif;
-    margin-top: 1px;
-    text-decoration-color: aliceblue;
-    color: var(--a2-color);
-}
-
 .edsublead{
     font-size: 18px;
     font-family: 'Noto Sans JP',sans-serif;
     text-decoration-color: aliceblue;
+}
+
+.pop_btn > li{
+    display: inline-block;
+    height: 180px;
+    margin: 0;
+    position: relative;
+    width: 180px;
+}
+
+.pop_btn > li a{
+    background-color: var(--bt-color);
+    border: 5px solid var(--pbtb-color);
+    border-radius: 500px;
+    color: var(--pbtb-color);
+    display: block;
+    font-size: 20px;
+    height: 120px;
+    left: 15px;
+    line-height: 110px;
+    margin-top: 15px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 15px;
+    transition: all ease 0.2s;
+    width: 120px;
+}
+
+.pop_btn > li a:hover{
+    background-color: var(--pbtb-color);
+    color: var(--bt-color);
+    font-size: 30px;
+    height: 170px;
+    left: -9.5px;
+    line-height: 160px;
+    top: -10px;
+    width: 170px;
 }
 
 /*テーマ切り換え部分*/
@@ -171,6 +201,7 @@ body[theme="dark"] {
     --a-color: #55ff55;
     --bt-color: #000075;
     --a2-color: #66FF99;
+    --pbtb-color: #FFC000;
 }
 
 body[theme="light"] {
@@ -181,6 +212,7 @@ body[theme="light"] {
     --a-color: #000096;
     --bt-color: #97FFFF;
     --a2-color: #000075;
+    --pbtb-color: #0000CC;
 }
 
 body{
