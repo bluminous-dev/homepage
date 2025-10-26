@@ -109,9 +109,6 @@
             document.body.setAttribute("theme","light");
             readImg("themeImgPC","./img/blum-l.svg");
             readImg("themeImgSP","./img/blum-lsp.svg");
-            readImg("elec","./img/elec-l.svg");
-            readImg("educ","./img/educ-l.svg");
-            readImg("agri","./img/agfi-l.svg");
             changeColor("topic","#000096",2);
             changeColor("featurette-divider","#0000FF",3);
             changeColor("ma-i","#ff5a33",0);
@@ -128,9 +125,6 @@
             document.body.setAttribute("theme","dark");
             readImg("themeImgPC","./img/Bluminous.svg");
             readImg("themeImgSP","./img/blum-dsp.svg");
-            readImg("elec","./img/elec-d.svg");
-            readImg("educ","./img/educ-d.svg");
-            readImg("agri","./img/agfi-d.svg");
             changeColor("topic","#55ff55",2);
             changeColor("featurette-divider","#55FF55",3);
             changeColor("ma-i","#ff9900",0);
@@ -150,9 +144,6 @@
         window.onload=function(){
             readImg("themeImgPC","./img/Bluminous.svg");
             readImg("themeImgSP","./img/blum-dsp.svg");
-            readImg("elec","./img/elec-d.svg");
-            readImg("educ","./img/educ-d.svg");
-            readImg("agri","./img/agfi-d.svg");
             setColor("topic","#55ff55",2);
             setColor("featurette-divider","#55FF55",3);
             setColor("ma-i","#ff9900",0);
@@ -170,9 +161,6 @@
         window.onload=function(){
             readImg("themeImgPC","./img/blum-l.svg");
             readImg("themeImgSP","./img/blum-lsp.svg");
-            readImg("elec","./img/elec-l.svg");
-            readImg("educ","./img/educ-l.svg");
-            readImg("agri","./img/agfi-l.svg");
             setColor("topic","#000096",2);
             setColor("featurette-divider","#0000FF",3);
             setColor("ma-i","#ff5a33",0);
@@ -196,29 +184,17 @@
     <hr id="featurette-divider0">
       <div id="contents" class="col-md-7">
         <h1 id="topic0">Contents</h2>
-        <div class="row" id="quiz-transfer">
-            <div class="col-lg-12">
-              <a href="./education.html" role="button"><img class="img3" id="educ" alt="educ"></a>
-            </div>
-            <div class="col-lg-12">
-              <p class="edcolead">教育</p>
-              <p class="sublead">YouTube漢字動画随時更新</p>
-            </div>
-            <div class="col-lg-12">
-               <a href="./agriculture.html" role="button"><img class="img3" id="agri" alt="agri"></a>   
-            </div>
-            <div class="col-lg-12">
-              <p class="edcolead">農水産業</p>
-              <p class="sublead">沖縄にて活動中</p>
-            </div>
-            <div class="col-lg-12">
-              <a href="./electronics.html" role="button"><img class="img3" id="elec"alt="elec"></a>
-            </div>
-            <div class="col-lg-12">
-              <p class="edcolead">電子工作</p>
-              <p class="sublead">依頼受付中</p>
-            </div>
-        </div>
+            <ul class="pop_btn">
+              <li>
+                <h2><a href="education.html">教育</a></h2>
+              </li>
+              <li>
+                <h2><a href="agriculture.html">農水産業</a></h2>
+              </li>
+              <li>
+                <h2><a href="electronics.html">電子工作</a></h2>
+              </li>
+            </ul>
        </div>
     <hr id="featurette-divider1">
       <div id="about" class="col-md-7">
