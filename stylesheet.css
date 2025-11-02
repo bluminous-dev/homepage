@@ -24,7 +24,7 @@ html{
 
 /*ヘッダーのContents,About,Contact*/
 .nav-link{
-    color: #55FF55;
+    color: #00FFFF;
     margin-right: 5px;
     display: inline-block;
     text-decoration: none;
@@ -198,9 +198,9 @@ body[theme="dark"] {
     --s-color: #9F9F9F;
     --s-bg: #242424;
     --b-1: 1px #242424 solid;
-    --a-color: #55ff55;
+    --a-color: #00FFFF;
     --bt-color: #000075;
-    --a2-color: #66FF99;
+    --a2-color: #00FFFF;
     --pbtb-color: #FFC000;
 }
 
@@ -222,7 +222,7 @@ body{
 #themechange{
     border: var(--m-bg);
     background: #000064;
-    color: #55FF55;
+    color: #00FFFF;
     font-size: 18px;
     font-weight: bold;
     padding: 5px 15px;
