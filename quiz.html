@@ -130,9 +130,9 @@
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
-            changeColor("topic","#55ff55");
-            changeColor("featurette-divider","#55ff55");
-            changeColor("btt","#55ff55");
+            changeColor("topic","#00ffff");
+            changeColor("featurette-divider","#00ffff");
+            changeColor("btt","#00ffff");
             //changeTwitterTheme("twitter-timeline","dark");
         }
     });
@@ -141,9 +141,9 @@
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.setAttribute("theme","dark");
         window.onload=function(){
-            setColor("topic","#55ff55");
-            setColor("featurette-divider","#55ff55");
-            setColor("btt","#55ff55");
+            setColor("topic","#00ffff");
+            setColor("featurette-divider","#00ffff");
+            setColor("btt","#00ffff");
        }
     }
     else {
