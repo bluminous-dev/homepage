@@ -100,21 +100,15 @@
             changeColor("map-topic","#000096");
             changeColor("featurette-divider","#0000FF");
             changeColor("mapmain","#0040C0");
-            changeColor("mapagri","#0040C0");
-            changeColor("mapelec","#0040C0");
-            changeColor("mapeduc","#0040C0");
             changeColor("btt","#000096");
         } 
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
-            changeColor("map-topic","#55ff55");
-            changeColor("featurette-divider","#55ff55");
-            changeColor("mapmain","#99ffcc");
-            changeColor("mapagri","#99ffcc");
-            changeColor("mapelec","#99ffcc");
-            changeColor("mapeduc","#99ffcc");
-            changeColor("btt","#55ff55");
+            changeColor("map-topic","#00ffff");
+            changeColor("featurette-divider","#00ffff");
+            changeColor("mapmain","#00ffff");
+            changeColor("btt","#00ffff");
         }
     });
     
@@ -122,13 +116,10 @@
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.setAttribute("theme","dark");
         window.onload=function(){
-            setColor("map-topic","#55ff55");
-            setColor("featurette-divider","#55ff55");
-            setColor("mapmain","#99ffcc");
-            setColor("mapagri","#99ffcc");
-            setColor("mapelec","#99ffcc");
-            setColor("mapeduc","#99ffcc");
-            setColor("btt","#55ff55");
+            setColor("map-topic","#00ffff");
+            setColor("featurette-divider","#00ffff");
+            setColor("mapmain","#00ffff");
+            setColor("btt","#00ffff");
        }
     }
     else {
@@ -137,9 +128,6 @@
             setColor("map-topic","#000096");
             setColor("featurette-divider","#0000FF");
             setColor("mapmain","#0040C0");
-            setColor("mapagri","#0040C0");
-            setColor("mapelec","#0040C0");
-            setColor("mapeduc","#0040C0");
             setColor("btt","#000096");
        }
     }
@@ -155,17 +143,17 @@
           <a href="index.html" id="mapmain">トップ</a>
         </div>
       </div>
-      <div class="row" id="maplistsub"> 
-        <div class="col-lg-12">
-          <a href="agriculture.html" id="mapagri">農水産業</a>
-        </div>
-        <div class="col-lg-12">
-          <a href="electronics.html" id="mapelec">電子工作</a>
-        </div>
-        <div class="col-lg-12">
-          <a href="education.html" id="mapeduc">教育</a>
-        </div>
-      </div>
+      <ul class="pop_btn">
+        <li>
+         <h2><a href="education.html">教育</a></h2>
+        </li>
+        <li>
+         <h2><a href="agriculture.html">農水産業</a></h2>
+        </li>
+        <li>
+         <h2><a href="electronics.html">電子工作</a></h2>
+        </li>
+      </ul>
     </div>
     </div>
     <hr id="featurette-divider">
