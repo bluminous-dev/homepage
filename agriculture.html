@@ -104,9 +104,9 @@
         //もしライトテーマならダークテーマとダーク版ロゴに切り換え
         else {
             document.body.setAttribute("theme","dark");
-            changeColor("topic","#55ff55");
-            changeColor("featurette-divider1","#55ff55");
-            changeColor("btt","#55ff55");
+            changeColor("topic","#00ffff");
+            changeColor("featurette-divider1","#00ffff");
+            changeColor("btt","#00ffff");
         }
     });
     
@@ -114,9 +114,9 @@
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.setAttribute("theme","dark");
         window.onload=function(){
-            setColor("topic","#55ff55");
-            setColor("featurette-divider1","#55ff55");
-            setColor("btt","#55ff55");
+            setColor("topic","#00ffff");
+            setColor("featurette-divider1","#00ffff");
+            setColor("btt","#00ffff");
        }
     }
     else {
